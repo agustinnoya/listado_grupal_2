@@ -1,4 +1,4 @@
-const limipiar = document.getElementById("limpiar");
+const lmipiar = document.getElementById("limpiar");
 const agregar = document.getElementById("agregar");
 const itemText = document.getElementById("item");
 const contenedor = document.getElementById("contenedor");
@@ -30,8 +30,8 @@ agregar.addEventListener("click", () => {
     }
 });
 
-limipiar.addEventListener("click", () => {
-    localStorage.clear;
+lmipiar.addEventListener("click", () => {
+    localStorage.removeItem("localContent");
     contenedor.innerHTML = ""
 });
 
